@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260B2078F1CEB0641C2A8D29 /* Pods_GoogleMapsMarkerAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F87C7A6D2F94F795928D339 /* Pods_GoogleMapsMarkerAnimation.framework */; };
+		C05355B01F8C1621008FC85C /* sample_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C05355AF1F8C1621008FC85C /* sample_config.plist */; };
 		C0629F521F829BA9008271D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629F511F829BA9008271D7 /* AppDelegate.swift */; };
 		C0629F541F829BA9008271D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629F531F829BA9008271D7 /* ViewController.swift */; };
 		C0629F571F829BA9008271D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0629F551F829BA9008271D7 /* Main.storyboard */; };
 		C0629F591F829BA9008271D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0629F581F829BA9008271D7 /* Assets.xcassets */; };
 		C0629F5C1F829BA9008271D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0629F5A1F829BA9008271D7 /* LaunchScreen.storyboard */; };
+		C078D68B1F86E65500DE2EEC /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C078D6891F86E65500DE2EEC /* config.plist */; };
+		C078D68D1F86E76900DE2EEC /* coordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = C078D68C1F86E76900DE2EEC /* coordinates.json */; };
+		C078D68F1F86E98000DE2EEC /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = C078D68E1F86E97F00DE2EEC /* style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F87C7A6D2F94F795928D339 /* Pods_GoogleMapsMarkerAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsMarkerAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B02ECFA90B31CD2B13C008 /* Pods-GoogleMapsMarkerAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsMarkerAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		6A019078A21BA065D28C2857 /* Pods-GoogleMapsMarkerAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsMarkerAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		C05355AF1F8C1621008FC85C /* sample_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample_config.plist; sourceTree = "<group>"; };
 		C0629F4E1F829BA9008271D7 /* GoogleMapsMarkerAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapsMarkerAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0629F511F829BA9008271D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0629F531F829BA9008271D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		C0629F581F829BA9008271D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0629F5B1F829BA9008271D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0629F5D1F829BA9008271D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C078D6891F86E65500DE2EEC /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		C078D68C1F86E76900DE2EEC /* coordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coordinates.json; sourceTree = "<group>"; };
+		C078D68E1F86E97F00DE2EEC /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260B2078F1CEB0641C2A8D29 /* Pods_GoogleMapsMarkerAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FC3FC7551942074AA90AA91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A019078A21BA065D28C2857 /* Pods-GoogleMapsMarkerAnimation.debug.xcconfig */,
+				43B02ECFA90B31CD2B13C008 /* Pods-GoogleMapsMarkerAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90738D8D3BAC15FF560F65CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F87C7A6D2F94F795928D339 /* Pods_GoogleMapsMarkerAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0629F451F829BA9008271D7 = {
 			isa = PBXGroup;
 			children = (
 				C0629F501F829BA9008271D7 /* GoogleMapsMarkerAnimation */,
 				C0629F4F1F829BA9008271D7 /* Products */,
+				7FC3FC7551942074AA90AA91 /* Pods */,
+				90738D8D3BAC15FF560F65CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +86,10 @@
 		C0629F501F829BA9008271D7 /* GoogleMapsMarkerAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C078D68E1F86E97F00DE2EEC /* style.json */,
+				C078D68C1F86E76900DE2EEC /* coordinates.json */,
+				C078D6891F86E65500DE2EEC /* config.plist */,
+				C05355AF1F8C1621008FC85C /* sample_config.plist */,
 				C0629F511F829BA9008271D7 /* AppDelegate.swift */,
 				C0629F531F829BA9008271D7 /* ViewController.swift */,
 				C0629F551F829BA9008271D7 /* Main.storyboard */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0629F601F829BA9008271D7 /* Build configuration list for PBXNativeTarget "GoogleMapsMarkerAnimation" */;
 			buildPhases = (
+				B5C3C85F22C2D700F44FAE33 /* [CP] Check Pods Manifest.lock */,
 				C0629F4A1F829BA9008271D7 /* Sources */,
 				C0629F4B1F829BA9008271D7 /* Frameworks */,
 				C0629F4C1F829BA9008271D7 /* Resources */,
+				2EC3105DB40AEB80454F43BE /* [CP] Embed Pods Frameworks */,
+				9C33BA3A1BB5D92C4AD54F50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +163,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0629F5C1F829BA9008271D7 /* LaunchScreen.storyboard in Resources */,
+				C078D68D1F86E76900DE2EEC /* coordinates.json in Resources */,
 				C0629F591F829BA9008271D7 /* Assets.xcassets in Resources */,
 				C0629F571F829BA9008271D7 /* Main.storyboard in Resources */,
+				C078D68F1F86E98000DE2EEC /* style.json in Resources */,
+				C05355B01F8C1621008FC85C /* sample_config.plist in Resources */,
+				C078D68B1F86E65500DE2EEC /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EC3105DB40AEB80454F43BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C33BA3A1BB5D92C4AD54F50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C3C85F22C2D700F44FAE33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleMapsMarkerAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0629F4A1F829BA9008271D7 /* Sources */ = {
@@ -272,9 +369,11 @@
 		};
 		C0629F611F829BA9008271D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A019078A21BA065D28C2857 /* Pods-GoogleMapsMarkerAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DWRHKVVARM;
 				INFOPLIST_FILE = GoogleMapsMarkerAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = virajpadte.GoogleMapsMarkerAnimation;
@@ -286,9 +385,11 @@
 		};
 		C0629F621F829BA9008271D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B02ECFA90B31CD2B13C008 /* Pods-GoogleMapsMarkerAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DWRHKVVARM;
 				INFOPLIST_FILE = GoogleMapsMarkerAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = virajpadte.GoogleMapsMarkerAnimation;
