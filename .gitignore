@@ -20,6 +20,8 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 config.plist
+Podfile.lock
+Pods/
 
 ## Obj-C/Swift specific
 *.hmap
