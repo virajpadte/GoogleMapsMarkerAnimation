@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		260B2078F1CEB0641C2A8D29 /* Pods_GoogleMapsMarkerAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F87C7A6D2F94F795928D339 /* Pods_GoogleMapsMarkerAnimation.framework */; };
+		C04862CB1F9B4BC500A5D5B5 /* dataHeading.csv in Resources */ = {isa = PBXBuildFile; fileRef = C04862CA1F9B4BC500A5D5B5 /* dataHeading.csv */; };
 		C05355B01F8C1621008FC85C /* sample_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C05355AF1F8C1621008FC85C /* sample_config.plist */; };
 		C0629F521F829BA9008271D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629F511F829BA9008271D7 /* AppDelegate.swift */; };
 		C0629F541F829BA9008271D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629F531F829BA9008271D7 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		C0629F591F829BA9008271D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0629F581F829BA9008271D7 /* Assets.xcassets */; };
 		C0629F5C1F829BA9008271D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0629F5A1F829BA9008271D7 /* LaunchScreen.storyboard */; };
 		C078D68B1F86E65500DE2EEC /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C078D6891F86E65500DE2EEC /* config.plist */; };
-		C078D68D1F86E76900DE2EEC /* coordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = C078D68C1F86E76900DE2EEC /* coordinates.json */; };
 		C078D68F1F86E98000DE2EEC /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = C078D68E1F86E97F00DE2EEC /* style.json */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +23,7 @@
 		1F87C7A6D2F94F795928D339 /* Pods_GoogleMapsMarkerAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsMarkerAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B02ECFA90B31CD2B13C008 /* Pods-GoogleMapsMarkerAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsMarkerAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		6A019078A21BA065D28C2857 /* Pods-GoogleMapsMarkerAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsMarkerAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsMarkerAnimation/Pods-GoogleMapsMarkerAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		C04862CA1F9B4BC500A5D5B5 /* dataHeading.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dataHeading.csv; sourceTree = SOURCE_ROOT; };
 		C05355AF1F8C1621008FC85C /* sample_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample_config.plist; sourceTree = "<group>"; };
 		C0629F4E1F829BA9008271D7 /* GoogleMapsMarkerAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapsMarkerAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0629F511F829BA9008271D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		C0629F5B1F829BA9008271D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0629F5D1F829BA9008271D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C078D6891F86E65500DE2EEC /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
-		C078D68C1F86E76900DE2EEC /* coordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coordinates.json; sourceTree = "<group>"; };
 		C078D68E1F86E97F00DE2EEC /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +86,8 @@
 		C0629F501F829BA9008271D7 /* GoogleMapsMarkerAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C04862CA1F9B4BC500A5D5B5 /* dataHeading.csv */,
 				C078D68E1F86E97F00DE2EEC /* style.json */,
-				C078D68C1F86E76900DE2EEC /* coordinates.json */,
 				C078D6891F86E65500DE2EEC /* config.plist */,
 				C05355AF1F8C1621008FC85C /* sample_config.plist */,
 				C0629F511F829BA9008271D7 /* AppDelegate.swift */,
@@ -163,8 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0629F5C1F829BA9008271D7 /* LaunchScreen.storyboard in Resources */,
-				C078D68D1F86E76900DE2EEC /* coordinates.json in Resources */,
 				C0629F591F829BA9008271D7 /* Assets.xcassets in Resources */,
+				C04862CB1F9B4BC500A5D5B5 /* dataHeading.csv in Resources */,
 				C0629F571F829BA9008271D7 /* Main.storyboard in Resources */,
 				C078D68F1F86E98000DE2EEC /* style.json in Resources */,
 				C05355B01F8C1621008FC85C /* sample_config.plist in Resources */,
